@@ -33,7 +33,7 @@
 		7D8C4A2F21E1C28B00F8ACDB /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8C4A2E21E1C28B00F8ACDB /* TodayViewController.swift */; };
 		7D8C4A3221E1C28B00F8ACDB /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C4A3021E1C28B00F8ACDB /* TodayViewController.xib */; };
 		7D8C4A3621E1C28B00F8ACDB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7D8C4A3421E1C28B00F8ACDB /* InfoPlist.strings */; };
-		7D8C4A3A21E1C28B00F8ACDB /* SCTimeWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7D8C4A2B21E1C28B00F8ACDB /* SCTimeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D8C4A3A21E1C28B00F8ACDB /* SCTimeWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7D8C4A2B21E1C28B00F8ACDB /* SCTimeWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7DA82552201C39DF006C5566 /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 7DA82551201C39DF006C5566 /* Glass.aiff */; };
 		7DA82554201C431C006C5566 /* TimerWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82553201C431C006C5566 /* TimerWindowController.swift */; };
 		7DA82556201C4393006C5566 /* StopwatchWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA82555201C4393006C5566 /* StopwatchWindowController.swift */; };
@@ -42,7 +42,7 @@
 		7DB9B79621F04CB5004E692A /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D1FA15C21DE493C00E439E7 /* NotificationCenter.framework */; };
 		7DB9B79921F04CB5004E692A /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9B79821F04CB5004E692A /* TodayViewController.swift */; };
 		7DB9B7A021F04CB5004E692A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DB9B79E21F04CB5004E692A /* InfoPlist.strings */; };
-		7DB9B7A421F04CB5004E692A /* SCCalWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7DB9B79521F04CB4004E692A /* SCCalWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7DB9B7A421F04CB5004E692A /* SCCalWidget.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7DB9B79521F04CB4004E692A /* SCCalWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		7DB9B7AA21F04D5F004E692A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7DB9B7AC21F04D5F004E692A /* Localizable.strings */; };
 		7DB9D54A2164735B00403AD3 /* PreferenceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9D5492164735B00403AD3 /* PreferenceViewController.swift */; };
 		7DC6DA15206FD9810088797D /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC6DA14206FD9810088797D /* StopwatchViewController.swift */; };
@@ -92,16 +92,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D1FA16F21DE493C00E439E7 /* Embed App Extensions */ = {
+		7D1FA16F21DE493C00E439E7 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7DB9B7A421F04CB5004E692A /* SCCalWidget.appex in Embed App Extensions */,
-				7D8C4A3A21E1C28B00F8ACDB /* SCTimeWidget.appex in Embed App Extensions */,
+				7DB9B7A421F04CB5004E692A /* SCCalWidget.appex in Embed Foundation Extensions */,
+				7D8C4A3A21E1C28B00F8ACDB /* SCTimeWidget.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7D3F7F142161DFF50019185F /* CopyFiles */ = {
@@ -373,7 +373,7 @@
 				7D00002E20DFE73B006A720B /* CopyFiles */,
 				7D00002F20DFE758006A720B /* Headers */,
 				7D3F7F142161DFF50019185F /* CopyFiles */,
-				7D1FA16F21DE493C00E439E7 /* Embed App Extensions */,
+				7D1FA16F21DE493C00E439E7 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -463,7 +463,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1420;
 				ORGANIZATIONNAME = "曾天宇";
 				TargetAttributes = {
 					7D5CF6B52019C3730032670C = {
@@ -743,6 +743,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -751,7 +752,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = P9V576CEPD;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -803,6 +806,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -811,7 +815,9 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = P9V576CEPD;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -838,16 +844,18 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 348F982954;
+				DEVELOPMENT_TEAM = P9V576CEPD;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SimpleClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdanielbrown.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleClock/SC-Bridge-Header.h";
@@ -864,16 +872,18 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 348F982954;
+				DEVELOPMENT_TEAM = P9V576CEPD;
+				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SimpleClock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdanielbrown.SimpleClock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SimpleClock/SC-Bridge-Header.h";
@@ -888,9 +898,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P9V576CEPD;
 				INFOPLIST_FILE = SimpleClockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zengtianyu.SimpleClockTests;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = mattdanielbrown.SimpleClockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleClock.app/Contents/MacOS/SimpleClock";
@@ -904,9 +917,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P9V576CEPD;
 				INFOPLIST_FILE = SimpleClockTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zengtianyu.SimpleClockTests;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = mattdanielbrown.SimpleClockTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleClock.app/Contents/MacOS/SimpleClock";
@@ -919,9 +935,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P9V576CEPD;
 				INFOPLIST_FILE = SimpleClockUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zengtianyu.SimpleClockUITests;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = mattdanielbrown.SimpleClockUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SimpleClock;
@@ -934,9 +953,12 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P9V576CEPD;
 				INFOPLIST_FILE = SimpleClockUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = zengtianyu.SimpleClockUITests;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = mattdanielbrown.SimpleClockUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = SimpleClock;
@@ -951,13 +973,15 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 348F982954;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P9V576CEPD;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SCTimeWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock.SCTimeWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdanielbrown.SimpleClock.SCTimeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -972,12 +996,14 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 348F982954;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P9V576CEPD;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SCTimeWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock.SCTimeWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdanielbrown.SimpleClock.SCTimeWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -990,15 +1016,18 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = SCCalWidget/SCCalWidget.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 348F982954;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P9V576CEPD;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SCCalWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock.SCCalWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdanielbrown.SimpleClock.SCCalWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1011,14 +1040,17 @@
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_ENTITLEMENTS = SCCalWidget/SCCalWidget.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 348F982954;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = P9V576CEPD;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = SCCalWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zengtianyu.SimpleClock.SCCalWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mattdanielbrown.SimpleClock.SCCalWidget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
